@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+        <record id="action_report_product_product" model="ir.actions.report">
+            <field name="name">Product Report</field>
+            <field name="model">doctor_doctor</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">om_hostibal.report_product</field>
+            <field name="report_file">om_hostibal.report_product</field>
+            <field name="binding_model_id" ref="model_doctor_doctor"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <record id="action_report_product_product_xlsx" model="ir.actions.report">
+            <field name="name">Product Report Excel</field>
+            <field name="model">doctor_doctor</field>
+            <field name="report_type">xlsx</field>
+            <field name="report_name">om_hostibal.report_product.xlsx</field>
+            <field name="report_file">om_hostibal.report_product.xlsx</field>
+            <field name="binding_model_id" ref="model_doctor_doctor"/>
+            <field name="binding_type">report</field>
+        </record>
+
+
+    </data>
+</odoo>

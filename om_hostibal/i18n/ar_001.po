@@ -1,0 +1,462 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* om_hostibal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-02 13:52+0000\n"
+"PO-Revision-Date: 2023-10-02 13:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__access_warning
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__access_warning
+msgid "Access warning"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__message_needaction
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__activity_ids
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__activity_exception_decoration
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__activity_state
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__activity_type_icon
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__age
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__age
+msgid "Age"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__message_attachment_count
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__birthday
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__birthday
+msgid "Birthday"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__campaign_id
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__campaign_id
+msgid "Campaign"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields.selection,name:om_hostibal.selection__doctor_doctor__state__cancel
+#: model:ir.model.fields.selection,name:om_hostibal.selection__hospital_patient__state__cancel
+msgid "Cancel"
+msgstr "الغاء"
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__create_uid
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__create_uid
+msgid "Created by"
+msgstr "المنشئ"
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__create_date
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,help:om_hostibal.field_doctor_doctor__access_url
+#: model:ir.model.fields,help:om_hostibal.field_hospital_patient__access_url
+msgid "Customer Portal URL"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__display_name
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.ui.menu,name:om_hostibal.Doctor_menu_root
+msgid "Doctor"
+msgstr "الدكتور"
+
+#. module: om_hostibal
+#: model:ir.model.fields.selection,name:om_hostibal.selection__doctor_doctor__state__done
+#: model:ir.model.fields.selection,name:om_hostibal.selection__hospital_patient__state__done
+#: model_terms:ir.ui.view,arch_db:om_hostibal.doctor_form_view
+#: model_terms:ir.ui.view,arch_db:om_hostibal.patient_form_view
+msgid "Done"
+msgstr "تم"
+
+#. module: om_hostibal
+#: model:ir.model.fields.selection,name:om_hostibal.selection__doctor_doctor__state__draft
+#: model:ir.model.fields.selection,name:om_hostibal.selection__hospital_patient__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: om_hostibal
+#: model:ir.model.fields.selection,name:om_hostibal.selection__doctor_doctor__gender__famle
+#: model:ir.model.fields.selection,name:om_hostibal.selection__hospital_patient__gender__famle
+msgid "Female"
+msgstr "انثي"
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__message_follower_ids
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__message_follower_ids
+msgid "Followers"
+msgstr "ماتبعين"
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__message_partner_ids
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,help:om_hostibal.field_doctor_doctor__activity_type_icon
+#: model:ir.model.fields,help:om_hostibal.field_hospital_patient__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__gender
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__gender
+msgid "Gender"
+msgstr "ذكر ولا انثي"
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__has_message
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.module.category,name:om_hostibal.module_management
+#: model:ir.ui.menu,name:om_hostibal.Hospital_menu_root
+msgid "Hospital"
+msgstr "مشتشفي"
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__id
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__id
+msgid "ID"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__activity_exception_icon
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,help:om_hostibal.field_doctor_doctor__activity_exception_icon
+#: model:ir.model.fields,help:om_hostibal.field_hospital_patient__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,help:om_hostibal.field_doctor_doctor__message_needaction
+#: model:ir.model.fields,help:om_hostibal.field_hospital_patient__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,help:om_hostibal.field_doctor_doctor__message_has_error
+#: model:ir.model.fields,help:om_hostibal.field_doctor_doctor__message_has_sms_error
+#: model:ir.model.fields,help:om_hostibal.field_hospital_patient__message_has_error
+#: model:ir.model.fields,help:om_hostibal.field_hospital_patient__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model,name:om_hostibal.model_hospital_patient
+msgid "Info Hospital"
+msgstr "معلوومات عن المستشفي"
+
+#. module: om_hostibal
+#: model:ir.model,name:om_hostibal.model_doctor_doctor
+msgid "Infoooo Hospital"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__message_is_follower
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor____last_update
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__write_uid
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__write_date
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__message_main_attachment_id
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields.selection,name:om_hostibal.selection__doctor_doctor__gender__male
+#: model:ir.model.fields.selection,name:om_hostibal.selection__hospital_patient__gender__male
+msgid "Male"
+msgstr "ذكر"
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__medium_id
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__medium_id
+msgid "Medium"
+msgstr "وسط"
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__message_has_error
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__message_ids
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__my_activity_date_deadline
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__name
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__name
+msgid "Name"
+msgstr "اسم"
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__newfield
+msgid "Newfield"
+msgstr "حقل جديد"
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__newfield2
+msgid "Newfield2"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__activity_date_deadline
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__activity_summary
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__activity_type_id
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__message_needaction_counter
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__message_has_error_counter
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,help:om_hostibal.field_doctor_doctor__message_needaction_counter
+#: model:ir.model.fields,help:om_hostibal.field_hospital_patient__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,help:om_hostibal.field_doctor_doctor__message_has_error_counter
+#: model:ir.model.fields,help:om_hostibal.field_hospital_patient__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__access_url
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__access_url
+msgid "Portal Access URL"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__activity_user_id
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__message_has_sms_error
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__access_token
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__access_token
+msgid "Security Token"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__source_id
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__source_id
+msgid "Source"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__state
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__state
+msgid "State"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,help:om_hostibal.field_doctor_doctor__activity_state
+#: model:ir.model.fields,help:om_hostibal.field_hospital_patient__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,help:om_hostibal.field_doctor_doctor__campaign_id
+#: model:ir.model.fields,help:om_hostibal.field_hospital_patient__campaign_id
+msgid ""
+"This is a name that helps you keep track of your different campaign efforts,"
+" e.g. Fall_Drive, Christmas_Special"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,help:om_hostibal.field_doctor_doctor__medium_id
+#: model:ir.model.fields,help:om_hostibal.field_hospital_patient__medium_id
+msgid "This is the method of delivery, e.g. Postcard, Email, or Banner Ad"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,help:om_hostibal.field_doctor_doctor__source_id
+#: model:ir.model.fields,help:om_hostibal.field_hospital_patient__source_id
+msgid ""
+"This is the source of the link, e.g. Search Engine, another domain, or name "
+"of email list"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,help:om_hostibal.field_doctor_doctor__activity_exception_decoration
+#: model:ir.model.fields,help:om_hostibal.field_hospital_patient__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,field_description:om_hostibal.field_doctor_doctor__website_message_ids
+#: model:ir.model.fields,field_description:om_hostibal.field_hospital_patient__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.model.fields,help:om_hostibal.field_doctor_doctor__website_message_ids
+#: model:ir.model.fields,help:om_hostibal.field_hospital_patient__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.ui.menu,name:om_hostibal.add2_menu_root
+#: model:ir.ui.menu,name:om_hostibal.add_menu_root
+msgid "add"
+msgstr "اضافه"
+
+#. module: om_hostibal
+#: model_terms:ir.ui.view,arch_db:om_hostibal.doctor_form_view
+#: model_terms:ir.ui.view,arch_db:om_hostibal.patient_form_view
+msgid "cancel"
+msgstr "الغاء"
+
+#. module: om_hostibal
+#: model:ir.actions.act_window,name:om_hostibal.doctor_action_window
+msgid "doctor"
+msgstr "دكتور"
+
+#. module: om_hostibal
+#: model_terms:ir.ui.view,arch_db:om_hostibal.doctor_form_view
+#: model_terms:ir.ui.view,arch_db:om_hostibal.patient_form_view
+msgid "draft"
+msgstr ""
+
+#. module: om_hostibal
+#: model:ir.actions.act_window,name:om_hostibal.hospital_action_window
+msgid "hospital"
+msgstr ""
+
+#. module: om_hostibal
+#: model:res.groups,name:om_hostibal.group_hospital_manager
+msgid "hospital manager"
+msgstr "دكتور مدير"
+
+#. module: om_hostibal
+#: model:res.groups,name:om_hostibal.group_hospital_user
+msgid "hospital user"
+msgstr "دكتور مش مدير"
+
+#. module: om_hostibal
+#: model:ir.ui.menu,name:om_hostibal.pateint_menu_root
+msgid "pateint"
+msgstr "عيان"
+
+#. module: om_hostibal
+#: model_terms:ir.ui.view,arch_db:om_hostibal.doctor_form_view
+#: model_terms:ir.ui.view,arch_db:om_hostibal.patient_form_view
+msgid "patient"
+msgstr "عيان"

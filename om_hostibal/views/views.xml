@@ -1,0 +1,224 @@
+<odoo>
+    <data>
+        <!-- Hospital-patient -->
+
+
+        <record model="ir.ui.view" id="patient_form_view">
+            <field name="name">patient</field>
+            <field name="model">hospital_patient</field>
+            <field name="arch" type="xml">
+                <form string="patient">
+                    <header>
+                        <button name="action_draft" type="object" string="draft" class="oe_highlight"/>
+                        <button name="action_done" type="object" string="Done" class="oe_highlight"/>
+                        <button name="action_cancel" type="object" string="cancel" class="oe_highlight"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button name="actions_act_material"
+                                    type="object"
+                                    class="oe_stat_button">
+                                <div class="o_field_widget o_stat_info">
+                                    <span class="o_stat_text">setting</span>
+                                </div>
+
+                            </button>
+
+                        </div>
+                        <div class="oe_chatter">
+                            <!-- Followers view -->
+                            <field name="message_follower_ids"/>
+                            <field name="activity_ids"/>
+                            <field name="message_ids"/>
+                        </div>
+
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="age"/>
+
+                            </group>
+                            <group>
+                                <field name="gender"/>
+                                <field name="birthday"/>
+
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="add_menu_list">
+            <field name="name">add list</field>
+            <field name="model">hospital_patient</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="age"/>
+                    <field name="gender"/>
+                    <field name="birthday"/>
+
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="hospital_action_window">
+            <field name="name">hospital</field>
+            <field name="res_model">hospital_patient</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+                name="Hospital"
+                id="Hospital_menu_root"
+                sequence="28"/>
+
+        <menuitem
+                name="pateint"
+                id="pateint_menu_root"
+                parent="Hospital_menu_root"
+                sequence="2"/>
+        <menuitem
+                name="add"
+                id="add_menu_root"
+                action="hospital_action_window"
+                parent="pateint_menu_root"
+                sequence="3"/>
+        <!-- Hospital-patient -->
+
+
+        <record model="ir.ui.view" id="doctor_form_view">
+            <field name="name">Doctor</field>
+            <field name="model">doctor_doctor</field>
+            <field name="arch" type="xml">
+                <form string="patient">
+                    <header>
+                        <button name="action_draft" type="object" string="draft" class="oe_highlight"/>
+                        <button name="action_done" type="object" string="Done" class="oe_highlight"/>
+                        <button name="action_cancel" type="object" string="cancel" class="oe_highlight"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_chatter">
+                            <!-- Followers view -->
+                            <field name="message_follower_ids"/>
+                            <field name="activity_ids"/>
+                            <field name="message_ids"/>
+                        </div>
+
+                        <group>
+                            <group>
+<!--                                <button name="NewTest" type="object" string="Print New"/>-->
+                                <field name="name"/>
+                                <field name="age"/>
+                            </group>
+                            <group>
+                                <field name="gender"/>
+                                <field name="date2"/>
+                                <field name="newfield2"/>
+
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="doctor_list">
+            <field name="name">add list</field>
+            <field name="model">doctor_doctor</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="age"/>
+                    <field name="gender"/>
+                    <field name="date2"/>
+
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="doctor_action_window">
+            <field name="name">doctor</field>
+            <field name="res_model">doctor_doctor</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+                name="Doctor"
+                id="Doctor_menu_root"
+                parent="Hospital_menu_root"
+                sequence="1"/>
+
+        <menuitem
+                name="add"
+                id="add2_menu_root"
+                action="doctor_action_window"
+                parent="Doctor_menu_root"
+                sequence="3"/>
+
+
+        <!-- explicit list view definition -->
+        <!--
+            <record model="ir.ui.view" id="testapp.list">
+              <field name="name">testapp list</field>
+              <field name="model">testapp.testapp</field>
+              <field name="arch" type="xml">
+                <tree>
+                  <field name="name"/>
+                  <field name="value"/>
+                  <field name="value2"/>
+                </tree>
+              </field>
+            </record>
+        -->
+
+        <!-- actions opening views on models -->
+        <!--
+            <record model="ir.actions.act_window" id="testapp.action_window">
+              <field name="name">testapp window</field>
+              <field name="res_model">testapp.testapp</field>
+              <field name="view_mode">tree,form</field>
+            </record>
+        -->
+
+        <!-- server action to the one above -->
+        <!--
+            <record model="ir.actions.server" id="testapp.action_server">
+              <field name="name">testapp server</field>
+              <field name="model_id" ref="model_testapp_testapp"/>
+              <field name="state">code</field>
+              <field name="code">
+                action = {
+                  "type": "ir.actions.act_window",
+                  "view_mode": "tree,form",
+                  "res_model": model._name,
+                }
+              </field>
+            </record>
+        -->
+
+        <!-- Top menu item -->
+        <!--
+            <menuitem name="testapp" id="testapp.menu_root"/>
+        -->
+        <!-- menu categories -->
+        <!--
+            <menuitem name="Menu 1" id="testapp.menu_1" parent="testapp.menu_root"/>
+            <menuitem name="Menu 2" id="testapp.menu_2" parent="testapp.menu_root"/>
+        -->
+        <!-- actions -->
+        <!--
+            <menuitem name="List" id="testapp.menu_1_list" parent="testapp.menu_1"
+                      action="testapp.action_window"/>
+            <menuitem name="Server to list" id="testapp" parent="testapp.menu_2"
+                      action="testapp.action_server"/>
+        -->
+    </data>
+</odoo>

@@ -1,0 +1,1 @@
+from . import Wizard_report

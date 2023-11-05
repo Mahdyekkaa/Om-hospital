@@ -1,0 +1,74 @@
+<odoo>
+    <data>
+        <template id="report_product">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <div class="oe_structure"/>
+                            <h1>Hospital Report
+                                <span>Name:</span>
+                                <span t-field="o.name"/>
+                            </h1>
+                            <p>
+                                <span>Age:</span>
+                                <span t-field="o.age"/>
+                            </p>
+                            <p>
+                                <span>:</span>
+
+                                <span t-field="o.birthday"/>
+                            </p>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+
+        <template id="report_report_wizard">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <div class="oe_structure"/>
+                            <h1>Details Report
+                                <span>Name:</span>
+                                <span t-field="o.name"/>
+                            </h1>
+                            <p>
+                                <span>Age:</span>
+                                <span t-field="o.age"/>
+                            </p>
+                            <p>
+                                <span>:</span>
+
+                                <span t-field="o.birthday"/>
+                            </p>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+        <!--
+                <template id="listing">
+                  <ul>
+                    <li t-foreach="objects" t-as="object">
+                      <a t-attf-href="#{ root }/objects/#{ object.id }">
+                        <t t-esc="object.display_name"/>
+                      </a>
+                    </li>
+                  </ul>
+                </template>
+                <template id="object">
+                  <h1><t t-esc="object.display_name"/></h1>
+                  <dl>
+                    <t t-foreach="object._fields" t-as="field">
+                      <dt><t t-esc="field"/></dt>
+                      <dd><t t-esc="object[field]"/></dd>
+                    </t>
+                  </dl>
+                </template>
+        -->
+    </data>
+</odoo>
