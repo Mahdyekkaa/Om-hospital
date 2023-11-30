@@ -8,6 +8,17 @@ class Hospitalpatient(models.Model):
     _inherit = ['portal.mixin', 'mail.thread', 'mail.activity.mixin', 'utm.mixin']
     _description = "Info Hospital"
 
+    name = fields.Char(string='Name')
+    age = fields.Integer(string="Age")
+    birthday = fields.Date()
+    gender = fields.Selection(
+        [('male', 'Male'), ('famle', 'Female')]
+    )
+    state = fields.Selection(
+        [('draft', 'Draft'), ('done', 'Done'), ('cancel', 'Cancel')],
+        default='draft'
+    )
+
     def action_draft(self):
         for rec in self:
             rec.state = 'draft'
@@ -19,17 +30,6 @@ class Hospitalpatient(models.Model):
     def action_cancel(self):
         for rec in self:
             rec.state = 'cancel'
-
-    name = fields.Char(string='Name')
-    age = fields.Integer(string="Age")
-    birthday = fields.Date()
-    gender = fields.Selection(
-        [('male', 'Male'), ('famle', 'Female')]
-    )
-    state = fields.Selection(
-        [('draft', 'Draft'), ('done', 'Done'), ('cancel', 'Cancel')],
-        default='draft'
-    )
 
     @api.constrains('name')
     def _check_date_end(self):
@@ -75,17 +75,7 @@ class Hospitaldoctor(models.Model):
     _inherit = ['portal.mixin', 'mail.thread', 'mail.activity.mixin', 'utm.mixin']
     _description = "Infoooo Hospital"
 
-    def action_draft(self):
-        for rec in self:
-            rec.state = 'draft'
 
-    def action_done(self):
-        for rec in self:
-            rec.state = 'done'
-
-    def action_cancel(self):
-        for rec in self:
-            rec.state = 'cancel'
 
     name = fields.Char(string='Name')
     age = fields.Integer(string="Age")
@@ -99,18 +89,34 @@ class Hospitaldoctor(models.Model):
     )
     newfield2 = fields.Many2one('hospital_patient', string='Many2one')
 
+      def action_draft(self):
+        for rec in self:
+            rec.state = 'draft'
+
+    def action_done(self):
+        for rec in self:
+            rec.state = 'done'
+
+    def action_cancel(self):
+        for rec in self:
+            rec.state = 'cancel'
+
+
+
+# Develop API and Test API in postman 
+
     def default_get(self, fields):
         res = super(Hospitaldoctor, self).default_get(fields)
         res['age'] = 55
         res['name'] = 'momo'
         return res
 
-    # @api.model
-    # def _name_search(self, name='', args=None, operator='ilike', limit=100):
-    #     if args is None:
-    #         args = []
-    #     domain = args + ['|', ('age', operator, name), ('gender', operator, name)]
-    #     return super(Hospitaldoctor,self).search(domain,limit=limit).name_get
+    @api.model
+    def _name_search(self, name='', args=None, operator='ilike', limit=100):
+        if args is None:
+            args = []
+        domain = args + ['|', ('age', operator, name), ('gender', operator, name)]
+        return super(Hospitaldoctor,self).search(domain,limit=limit).name_get
 
 
     def write(self,vals):
