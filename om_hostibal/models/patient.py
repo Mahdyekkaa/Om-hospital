@@ -101,6 +101,14 @@ class Hospitaldoctor(models.Model):
         for rec in self:
             rec.state = 'cancel'
 
+# from dateutil.relativedelta import relativedelta
+@api.depends('birthday')
+def _compute_age(self):
+    self.age = False
+    for rec in self:
+        rec.age = relativedelta(date.today(),rec.birthday).years
+
+
 
 
 # Develop API and Test API in postman 
